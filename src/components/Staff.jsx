@@ -8,7 +8,7 @@ import {
   FaSearch,
   FaTimes,
 } from "react-icons/fa";
-import { staffList } from "./staffData";
+import { staffList } from "../data/StaffData";
 
 const departments = ["All", "Science", "Arts", "Commercial"];
 

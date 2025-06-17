@@ -144,7 +144,7 @@ const AccordionItem = ({ question, answer, isOpen, toggleAccordion }) => {
 
 
 // Main AdmissionPage Component
-export default function AdmissionPage() {
+export default function Admissions() {
   const [openAccordion, setOpenAccordion] = useState(null); // State for FAQ accordion
 
   const faqs = [

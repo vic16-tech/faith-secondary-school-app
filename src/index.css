@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+
+@font-face {
+    font-family: "ID Grotesk";
+    src: url(/fonts/id_grotesk/IDGrotesk-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family:"Poppins" ;
+  src: url(///public/Poppins-ExtraLightItalic.ttf);
+  font-weight: 100;
+}
+@theme {
+  --font-grotesk: "ID Grotesk";
+  --font-pop: "Poppins";
+  --font-gro: "ID Grotesk Trial";
+  --font-inter:"Inter";
+  --font-serif:"PlayFair Display";
+  --breakpoint-sm:320px;
+  --breakpoint-xs:480px;
+  --breakpoint-md:768px;
+  --breakpoint-lg:1024px;
+}

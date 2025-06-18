@@ -191,7 +191,7 @@ export default function Admissions() {
 
   // Directly navigate to the contact page
   const handleContactAdmissionsClick = () => {
-    window.location.href = '/contact'; // Assumes /contact is your contact page path
+    window.location.href = '/ContactFaith'; // 
   };
 
 

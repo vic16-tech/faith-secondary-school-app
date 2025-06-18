@@ -33,7 +33,7 @@ const HeroSection = () => {
           transition={{ delay: 0.6, duration: 1 }}
           className="text-[0.65rem] xs:text-xs sm:text-sm md:text-base mt-4 max-w-[280px] xs:max-w-xs sm:max-w-sm mx-auto text-gray-200 italic font-inter"
         >
-          *“Lux Mentis, Lux Orbis” — The Light of the Mind is the Light of the World.*
+         <b> “Lux Mentis, Lux Orbis” — The Light of the Mind is the Light of the World.</b>
         </motion.p>
 
         {/* Description */}
@@ -43,7 +43,7 @@ const HeroSection = () => {
           transition={{ delay: 1.2, duration: 1 }}
           className="text-[0.6rem] xs:text-[0.7rem] sm:text-sm md:text-base mt-6 max-w-[280px] xs:max-w-xs sm:max-w-sm mx-auto text-gray-300"
         >
-          {/* A citadel of excellence, discipline, and godly heritage — shaping leaders with timeless values. */}
+          A citadel of excellence, discipline, and godly heritage — shaping leaders with timeless values. 
         </motion.p>
 
         {/* Call to Action */}

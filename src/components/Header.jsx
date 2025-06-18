@@ -113,7 +113,7 @@ const Header = () => {
             <Link to="/results" onClick={toggleMobileMenu} className="flex items-center gap-2">
               <FiAward /> Results
             </Link>
-            <Link to="/contact" onClick={toggleMobileMenu} className="block">Contact</Link>
+            <Link to="/ContactFaith" onClick={toggleMobileMenu} className="block">Contact</Link>
             <Link to="/login" onClick={toggleMobileMenu} className="flex items-center gap-2">
               <FiLogIn /> Login
             </Link>

@@ -6,19 +6,21 @@ import Footer from './components/Footer';
 import Admissions from './pages/Admissions';
 import Results from './pages/Results';
 import Staff from './components/Staff';
-import Login from './pages/Login'; 
+import Login from './pages/Login';
 import ContactFaith from './pages/ContactFaith';
 import AboutFaith from './pages/AboutFaith';
 import Register from './pages/Register';
 import './index.css';
 
 function App() {
-  const location = useLocation();
-  const isLoginPage = location.pathname === '/login';
+  // Removed: const location = useLocation();
+  // Removed: const isLoginPage = location.pathname === '/login';
+  // These are no longer needed if Header always renders
 
   return (
     <>
-      {!isLoginPage && <Header />}
+      {/* Header is now rendered unconditionally on all pages */}
+      <Header />
 
       <Routes>
         <Route
@@ -39,8 +41,6 @@ function App() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/ContactFaith' element= {<ContactFaith/>}/>
       </Routes>
-
-      {/* {!isLoginPage && <Footer />} */}
     </>
   );
 }

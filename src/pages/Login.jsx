@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Header from '../components/Header';
 
 // Inline SVG Icons for validation and password toggle
 const ExclamationCircleIcon = ({ size = 20, className = '' }) => (
@@ -154,8 +155,10 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br font-inter from-blue-100 via-purple-100 to-pink-100 font-inter p-4 sm:p-8 relative overflow-hidden">
+    
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br  from-blue-100 via-purple-100 to-pink-100 font-inter p-4 sm:p-8 relative overflow-hidden">
       {/* Animated background shapes */}
+
       <motion.div
         className="absolute top-1/4 left-1/4 w-32 h-32 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
         initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.5, duration: 2 }}
@@ -175,15 +178,16 @@ const Login = () => {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className="bg-white/90 backdrop-blur-md border border-gray-200 w-full max-w-xl rounded-3xl shadow-2xl p-6 md:p-10 relative z-10 overflow-hidden transform hover:scale-[1.005] transition-transform duration-300"
       >
+
         {/* Decorative elements - subtle gradients for a premium look */}
         <div className="absolute top-0 right-0 w-28 h-28 bg-indigo-500 rounded-bl-[50px] opacity-20"></div>
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-blue-500 rounded-tr-[50px] opacity-20"></div>
 
         {/* Shield icon with responsive positioning */}
+
         <div className="absolute top-4 left-4 sm:top-6 sm:left-6 md:top-3 md:left-4 text-indigo-700 text-3xl z-10">
           <ShieldIcon size={30} />
         </div>
-
         <h2 className="text-3xl md:text-4xl font-extrabold mb-8 text-center text-gray-800 tracking-tight leading-tight uppercase relative z-0 pb-4 border-b border-gray-100">
           Faith Secondary School <br /> <span className="text-indigo-600 text-2xl md:text-3xl">Login</span>
         </h2>
